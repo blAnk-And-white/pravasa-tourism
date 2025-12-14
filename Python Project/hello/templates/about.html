@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+ {% block title %}About{% endblock title %}
+
+
+{% load static %}
+{% block body %}
+
+<style>
+    .about-img {
+        height: 320px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+    .about-title {
+        font-family: 'Playfair Display', serif;
+        color: #0A1A2F;
+        font-weight: 700;
+    }
+</style>
+
+<div class="container my-5">
+
+    <!-- ABOUT SECTION -->
+    <div class="row align-items-center mb-5">
+
+        <div class="col-md-6 mb-3">
+            <img src="{% static 'img/about-gujarat.jpg' %}" class="w-100 about-img" alt="About Gujarat Tours">
+        </div>
+
+        <div class="col-md-6">
+            <h2 class="about-title mb-3">
+                About <span style="color:#D4AF37;">Pravāsa Tours & Travels</span>
+            </h2>
+            <p class="text-muted">
+                Pravāsa Tours & Travels is a trusted travel company dedicated to showcasing the rich
+                culture, heritage, and natural beauty of Gujarat. We specialize in providing
+                well-planned and affordable tour packages for families, students, and corporate groups.
+            </p>
+            <p class="text-muted">
+                With years of experience in the tourism industry, our mission is to create memorable
+                travel experiences while ensuring comfort, safety, and customer satisfaction.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- OUR MISSION & VISION -->
+    <div class="row mb-5">
+
+        <div class="col-md-6">
+            <h4 class="about-title mb-2">Our Mission</h4>
+            <p class="text-muted">
+                To provide high-quality travel services that promote Gujarat’s tourism while offering
+                exceptional value and unforgettable experiences to our customers.
+            </p>
+        </div>
+
+        <div class="col-md-6">
+            <h4 class="about-title mb-2">Our Vision</h4>
+            <p class="text-muted">
+                To become one of the most reliable and customer-centric travel agencies in India by
+                delivering safe, enjoyable, and culturally enriching journeys.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- WHY US -->
+    <div class="mb-5">
+        <h3 class="text-center about-title mb-4">
+            Why Choose <span style="color:#D4AF37;">Us</span>
+        </h3>
+
+        <div class="row text-center g-4">
+
+            <div class="col-md-4">
+                <div class="p-4 shadow-sm rounded bg-white">
+                    <img src="{% static 'img/experience.png' %}" width="60" class="mb-3">
+                    <h6 class="fw-bold">Experienced Team</h6>
+                    <p class="text-muted">Professional travel experts with local knowledge.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-4 shadow-sm rounded bg-white">
+                    <img src="{% static 'img/safety.png' %}" width="60" class="mb-3">
+                    <h6 class="fw-bold">Safety First</h6>
+                    <p class="text-muted">100% safe and verified destinations and transport.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-4 shadow-sm rounded bg-white">
+                    <img src="{% static 'img/price.png' %}" width="60" class="mb-3">
+                    <h6 class="fw-bold">Affordable Pricing</h6>
+                    <p class="text-muted">Best tour packages at competitive prices.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+
+        </div>
+    </div>
+
+</div>
+
+{% endblock body %}
+

@@ -1,0 +1,165 @@
+{% extends 'base.html' %}
+
+ {% block title %}Destinations{% endblock title %}
+
+
+{% load static %}
+{% block body %}
+
+<style>
+    .destination-card img {
+        height: 230px;
+        object-fit: cover;
+    }
+    .destination-title {
+        color: #0A1A2F;
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+    }
+</style>
+
+<div class="container my-5">
+
+    <h2 class="text-center mb-4" style="font-family:'Playfair Display', serif; color:#0A1A2F;">
+        Top <span style="color:#D4AF37;">Tourist Destinations</span> of Gujarat
+    </h2>
+
+    <div class="row g-4">
+
+        <!-- 1 Somnath -->
+        <div class="col-md-4">
+            <div class="card destination-card shadow-sm h-100">
+                <img src="{% static 'img/somnath.jfif' %}" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="destination-title">Somnath Temple</h5>
+                    <p class="text-muted">One of the 12 Jyotirlingas of Lord Shiva.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2 Dwarka -->
+        <div class="col-md-4">
+            <div class="card destination-card shadow-sm h-100">
+                <img src="{% static 'img/dwarka.jpg' %}" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="destination-title">Dwarka</h5>
+                    <p class="text-muted">Sacred city and Char Dham pilgrimage site.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3 Statue of Unity -->
+        <div class="col-md-4">
+            <div class="card destination-card shadow-sm h-100">
+                <img src="{% static 'img/SOU.jfif' %}" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="destination-title">Statue of Unity</h5>
+                    <p class="text-muted">World’s tallest statue at Kevadia.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4 Gir -->
+        <div class="col-md-4">
+            <div class="card destination-card shadow-sm h-100">
+                <img src="{% static 'img/gir.jfif' %}" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="destination-title">Gir National Park</h5>
+                    <p class="text-muted">Home of the Asiatic lions.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5 Rann of Kutch -->
+        <div class="col-md-4">
+            <div class="card destination-card shadow-sm h-100">
+                <img src="{% static 'img/white-rann.jpg' %}" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="destination-title">Rann of Kutch</h5>
+                    <p class="text-muted">White salt desert & Rann Utsav.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6 Adalaj -->
+        <div class="col-md-4">
+            <div class="card destination-card shadow-sm h-100">
+                <img src="{% static 'img/adalaj.jfif' %}" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="destination-title">Adalaj Stepwell</h5>
+                    <p class="text-muted">Historic Indo-Islamic architecture.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7 Girnar -->
+        <div class="col-md-4">
+            <div class="card destination-card shadow-sm h-100">
+                <img src="{% static 'img/girnar.jfif' %}" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="destination-title">Girnar Hills</h5>
+                    <p class="text-muted">Major Jain and Hindu pilgrimage site.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8 Ahmedabad -->
+        <div class="col-md-4">
+            <div class="card destination-card shadow-sm h-100">
+                <img src="{% static 'img/ahmedabad.jpg' %}" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="destination-title">Ahmedabad</h5>
+                    <p class="text-muted">Heritage city of India.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 9 Modhera -->
+        <div class="col-md-4">
+            <div class="card destination-card shadow-sm h-100">
+                <img src="{% static 'img/modhera.jpg' %}" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="destination-title">Modhera Sun Temple</h5>
+                    <p class="text-muted">Ancient temple dedicated to Sun God.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 10 Champaner -->
+        <div class="col-md-4">
+            <div class="card destination-card shadow-sm h-100">
+                <img src="{% static 'img/champaner.jpg' %}" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="destination-title">Champaner-Pavagadh</h5>
+                    <p class="text-muted">UNESCO World Heritage Site.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 11 Saputara -->
+        <div class="col-md-4">
+            <div class="card destination-card shadow-sm h-100">
+                <img src="{% static 'img/saputara.jpg' %}" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="destination-title">Saputara</h5>
+                    <p class="text-muted">Hill station of Gujarat.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 12 Mandvi -->
+        <div class="col-md-4">
+            <div class="card destination-card shadow-sm h-100">
+                <img src="{% static 'img/mandvi.jpg' %}" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="destination-title">Mandvi Beach</h5>
+                    <p class="text-muted">Clean beach with sunset views.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock body %}
+

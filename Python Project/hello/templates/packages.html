@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+
+ {% block title %}Packages{% endblock title %}
+
+
+{% load static %}
+{% block body %}
+
+<style>
+    .package-card img {
+        height: 220px;
+        object-fit: cover;
+    }
+    .price {
+        color: #D4AF37;
+        font-size: 20px;
+        font-weight: bold;
+    }
+</style>
+
+<div class="container my-5">
+
+    <h2 class="text-center mb-4" style="font-family:'Playfair Display', serif; color:#0A1A2F;">
+        Gujarat Tour <span style="color:#D4AF37;">Packages</span>
+    </h2>
+
+    <div class="row g-4">
+
+        <!-- Package 1 -->
+        <div class="col-md-4">
+            <div class="card package-card shadow-sm h-100">
+                <img src="{% static 'img/somnath.jfif' %}" class="card-img-top" alt="Somnath">
+                <div class="card-body">
+                    <h5 class="card-title">Somnath – Dwarka Tour</h5>
+                    <p class="card-text text-muted">
+                        3 Days / 2 Nights <br>
+                        Somnath • Dwarka • Nageshwar
+                    </p>
+                    <p class="price">₹8,999 / person</p>
+                    <a href="#" class="btn btn-dark w-100">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Package 2 -->
+        <div class="col-md-4">
+            <div class="card package-card shadow-sm h-100">
+                <img src="{% static 'img/gir.jfif' %}" class="card-img-top" alt="Gir">
+                <div class="card-body">
+                    <h5 class="card-title">Gir Wildlife Safari</h5>
+                    <p class="card-text text-muted">
+                        2 Days / 1 Night <br>
+                        Gir National Park • Junagadh
+                    </p>
+                    <p class="price">₹6,499 / person</p>
+                    <a href="#" class="btn btn-dark w-100">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Package 3 -->
+        <div class="col-md-4">
+            <div class="card package-card shadow-sm h-100">
+                <img src="{% static 'img/SOU.jfif' %}" class="card-img-top" alt="Statue of Unity">
+                <div class="card-body">
+                    <h5 class="card-title">Statue of Unity Tour</h5>
+                    <p class="card-text text-muted">
+                        2 Days / 1 Night <br>
+                        Statue of Unity • Kevadia
+                    </p>
+                    <p class="price">₹5,999 / person</p>
+                    <a href="#" class="btn btn-dark w-100">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Package 4 -->
+        <div class="col-md-4">
+            <div class="card package-card shadow-sm h-100">
+                <img src="{% static 'img/adalaj.jfif' %}" class="card-img-top" alt="Ahmedabad">
+                <div class="card-body">
+                    <h5 class="card-title">Ahmedabad Heritage Tour</h5>
+                    <p class="card-text text-muted">
+                        1 Day Tour <br>
+                        Sabarmati • Adalaj • Kankaria
+                    </p>
+                    <p class="price">₹2,999 / person</p>
+                    <a href="#" class="btn btn-dark w-100">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Package 5 -->
+        <div class="col-md-4">
+            <div class="card package-card shadow-sm h-100">
+                <img src="{% static 'img/girnar.jfif' %}" class="card-img-top" alt="Girnar">
+                <div class="card-body">
+                    <h5 class="card-title">Girnar Pilgrimage Tour</h5>
+                    <p class="card-text text-muted">
+                        2 Days / 1 Night <br>
+                        Girnar • Junagadh
+                    </p>
+                    <p class="price">₹4,499 / person</p>
+                    <a href="#" class="btn btn-dark w-100">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Package 6 -->
+        <div class="col-md-4">
+            <div class="card package-card shadow-sm h-100">
+                <img src="{% static 'img/white-rann.jpg' %}" class="card-img-top" alt="Rann of Kutch">
+                <div class="card-body">
+                    <h5 class="card-title">Rann of Kutch Festival</h5>
+                    <p class="card-text text-muted">
+                        3 Days / 2 Nights <br>
+                        White Rann • Bhuj • Cultural Events
+                    </p>
+                    <p class="price">₹9,999 / person</p>
+                    <a href="#" class="btn btn-dark w-100">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock body %}
+

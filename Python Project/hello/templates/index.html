@@ -1,0 +1,171 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+<style>
+  .carousel-item img {
+    height: 480px;
+    object-fit: cover;
+  }
+
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+</style>
+
+<div class="container mt-4">
+
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="{% static 'img/girnar.jfif' %}" class="d-block w-100 rounded" alt="Slide 1">
+        <div class="carousel-caption">
+          <h5>Girnar</h5>
+          <p>Junagadh</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="{% static 'img/somnath.jfif' %}" class="d-block w-100 rounded" alt="Slide 2">
+        <div class="carousel-caption">
+          <h5>Somnath Jyotirling</h5>
+          <p>Somnath</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="{% static 'img/SOU.jfif' %}" class="d-block w-100 rounded" alt="Slide 3">
+        <div class="carousel-caption">
+          <h5>Statue Of Unity</h5>
+          <p>Narmada</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="{% static 'img/adalaj.jfif' %}" class="d-block w-100 rounded" alt="Slide 4">
+        <div class="carousel-caption">
+          <h5>Adalaj Ni Vav</h5>
+          <p>Gandhinagar</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="{% static 'img/gir.jfif' %}" class="d-block w-100 rounded" alt="Slide 5">
+        <div class="carousel-caption">
+          <h5>Gir National Park</h5>
+          <p>Junagadh</p>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+
+</div>
+
+<!-- WHY CHOOSE US -->
+<!-- WHY CHOOSE US -->
+<div class="container my-5">
+    <h2 class="text-center mb-4" style="color:#0A1A2F; font-family:'Playfair Display', serif;">
+        Why Choose Us
+    </h2>
+
+    <div class="row g-4 text-center">
+
+        <!-- Feature 1 -->
+        <div class="col-md-4">
+            <div class="p-4 shadow-sm rounded bg-white">
+                <img src="{% static 'img/bus.jfif' %}" class="mb-3" width="70">
+                <h5 class="fw-bold">Comfortable AC Travel</h5>
+                <p class="text-muted">Travel in premium AC transport with full comfort.</p>
+            </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="col-md-4">
+            <div class="p-4 shadow-sm rounded bg-white">
+                <img src="{% static 'img/camera.jfif' %}" class="mb-3" width="70">
+                <h5 class="fw-bold">Free Photography Assistance</h5>
+                <p class="text-muted">We help you capture your best travel moments.</p>
+            </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="col-md-4">
+            <div class="p-4 shadow-sm rounded bg-white">
+                <img src="{% static 'img/money.jfif' %}" class="mb-3" width="70">
+                <h5 class="fw-bold">Affordable Packages</h5>
+                <p class="text-muted">Best prices with maximum value for every trip.</p>
+            </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="col-md-6">
+            <div class="p-4 shadow-sm rounded bg-white">
+                <img src="{% static 'img/shield.jfif' %}" class="mb-3" width="70">
+                <h5 class="fw-bold">100% Safe & Verified Trips</h5>
+                <p class="text-muted">Your safety is our top priority—we verify every destination.</p>
+            </div>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="col-md-6">
+            <div class="p-4 shadow-sm rounded bg-white">
+                <img src="{% static 'img/guide.jfif' %}" class="mb-3" width="70">
+                <h5 class="fw-bold">Experienced Tour Guides</h5>
+                <p class="text-muted">Professional guides with deep knowledge of every place.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- CUSTOMER REVIEWS -->
+<section class="mt-5 mb-5">
+    <h2 class="text-center" style="font-family:'Playfair Display', serif; color:#0A1A2F; font-weight:700;">
+        Customer <span style="color:#D4AF37;">Reviews</span>
+    </h2>
+
+    <div class="row mt-4">
+
+        <div class="col-md-4 mb-3">
+            <div class="p-4 rounded shadow-sm bg-white">
+                <p style="color:#333;">“Amazing service! Pravāsa made our family trip smooth and memorable.”</p>
+                <h6 style="color:#0A1A2F;">— Jon Snow</h6>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="p-4 rounded shadow-sm bg-white">
+                <p style="color:#333;">“Best packages and excellent staff. Highly recommend!”</p>
+                <h6 style="color:#0A1A2F;">— Harvey Specter</h6>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="p-4 rounded shadow-sm bg-white">
+                <p style="color:#333;">“Our Himachal trip was beautifully managed. Great experience!”</p>
+                <h6 style="color:#0A1A2F;">— Tony Stark</h6>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+{% endblock body %}
+
+
