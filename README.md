@@ -1,11 +1,11 @@
-🌍 Pravasa Tourism
+🌍 Pravasa Travels
 
-Pravasa Tourism is a responsive Tours & Travels website developed as a team project for the Computer Programming with Python (LPW) Examination.
-The website showcases tour packages, popular tourist destinations, and details about a travel agency with a clean and user-friendly interface.
+Pravasa Travels is a responsive Tours & Travels website developed as a team project for the Computer Programming with Python (LPW) Examination.
+The website showcases tour packages, popular tourist destinations, and information about a travel agency with a clean and user-friendly interface.
 
 📌 Project Details
 
-Project Title: Pravasa Tourism
+Project Title: Pravasa Travels
 
 University: National Forensic Sciences University (NFSU), Gandhinagar
 
@@ -41,13 +41,13 @@ JavaScript – Basic interactivity
 
 🌐 Website Pages
 
-Home Page – Overview of Pravasa Tourism services
+Home Page – Overview of Pravasa Travels services
 
 Packages Page – Various travel packages
 
 Destinations Page – Popular tourist destinations
 
-About Us Page – Information about Pravasa Tourism
+About Us Page – Information about Pravasa Travels
 
 ✨ Features
 
@@ -63,7 +63,7 @@ Well-organized tour packages and destinations
 
 Clone the repository:
 
-git clone https://github.com/your-username/pravasa-tourism.git
+git clone https://github.com/your-username/pravasa-travels.git
 
 
 Open index.html in any web browser.
